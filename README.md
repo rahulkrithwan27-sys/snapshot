@@ -21,7 +21,7 @@ actually want back.
 Download the binary, or build from source (requires Go 1.22+):
 
 ```
-git clone https://github.com/yourname/snapshot.git
+git clone https://github.com/rahulkrithwan27-sys/snapshot.git
 cd snapshot
 go build -o snapshot .
 ```
