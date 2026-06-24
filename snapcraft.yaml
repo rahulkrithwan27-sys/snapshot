@@ -1,0 +1,22 @@
+name: ubuntu-setup-snapshot
+base: core22
+version: '1.0.0'
+summary: Save and restore your Ubuntu apps and dotfiles
+description: |
+  Capture the apt packages, snaps, and dotfiles that make a machine yours,
+  then restore them on a fresh Ubuntu install with an interactive checklist
+  so you pick exactly what you want back.
+
+grade: stable
+confinement: classic
+
+apps:
+  ubuntu-setup-snapshot:
+    command: bin/snapshot
+
+parts:
+  snapshot:
+    plugin: go
+    source: .
+    build-snaps:
+      - go/1.22/stable

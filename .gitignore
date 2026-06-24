@@ -1,0 +1,11 @@
+# compiled binary
+/snapshot
+
+# captured backups (personal data, don't commit)
+/snapshot-backup/
+
+# snap build artifacts
+/parts/
+/prime/
+/stage/
+*.snap
